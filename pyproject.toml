@@ -45,14 +45,6 @@ ignore = ["ANN001", "ANN101", "ANN201", "ANN202", "B006", "BLE001", "E402", "PD9
 "__init__.py" = ["F401"]
 "**/tests/*.py" = ["D103"]
 
-[tool.pyright]
-venvPath = "./../."
-venv = ".venv"
-typeCheckingMode = "off"
-
-[tool.pyright.diagnosticSeverityOverrides]
-reportCallIssue = "off"
-
 [tool.pytest.ini_options]
 pythonpath="pipelines"
 addopts="--maxfail=2 -rf -W ignore::DeprecationWarning"
